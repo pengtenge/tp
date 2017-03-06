@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			css2.0
+			伪类：
+		a:link { } 设置超链接a在未被访问前的样式。
+		a:visited {}设置超链接a在其访问过后的样式。
+		a:hover {} 设置元素在其鼠标悬停时的样式。
+		a:active {} 设置元素在被用户激活（在鼠标点击与释放之间发生的事件）时的样式。
+		
+		伪类的顺序巧记：love hate
+		-->
+		<style type="text/css">
+			body{
+				background: deepskyblue;
+			}
+			h1 a:link{
+				color:black;
+				text-decoration: none;		
+			}
+			h1 a:visited{
+				color:green;
+			}
+			h1 a:hover{
+				color:#fff;
+				background: red;
+				text-decoration: underline;
+			}
+			h1 a:active{
+				color:yellow;
+			}
+			
+			/*实际工作中*/
+			li a:link,li a:visited{
+				color:red;
+			}
+			li a:hover{
+				background: deeppink;
+				color:#fff;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			<a href="http://www.baiodu.com">百度</a>
+			<a href="http://www.jd.com">京东</a>
+		</h1>
+		<hr />
+		
+		<ul>
+			<li><a href="http://www.sina.com.cn" >新浪1</a></li>
+			<li><a href="http://news.sina.com.cn/">新浪新闻</a></li>
+			<li><a href="?">外部链接</a></li>
+			<li><a href="?">内部链接</a></li>
+		</ul>
+	</body>
+</html>
