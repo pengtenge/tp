@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				border: 1px solid #CCCCCC;
+				/*margin: 0 10px;*/
+				float: left;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var obtn=document.getElementById("bnt")
+		     var h=200;
+		     var w=150;
+		     var t=0;
+			for (var i=0;i<10;i++) {
+//				obtn.style.height=h+'px';
+//			    obtn.style.width=w+'px';
+//			    document.getElementById("demo").innerHTML = "";
+                t=t+5;
+				h=h-10;
+				var hh=h;
+				w=w-10;
+				var ww=w;
+				console.log(w);
+				console.log(h);
+				console.log(t);
+				document.write("<div style=height:"+h+"px;width:"+w+"px;margin-top:"+t+"px;></div>");
+				
+			}
+//			<div class="bnt"></div>
+		</script>
+		
+	</body>
+</html>
