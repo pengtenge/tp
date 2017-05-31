@@ -1,0 +1,288 @@
+   *{
+		padding: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	li{
+		list-style: none;
+	}
+
+	.content{
+		line-height: ;
+		text-align: center;
+		
+	}
+	.topnav ul li{
+		float: left;
+	}
+.top1{
+	background: #002050;
+	padding:8px 0;
+	width: 100%;
+	height:36px ;
+	text-align: center;
+	color: #FFFFFF;
+}
+	@media (max-width: 760px) {
+    	.top1{
+    		height:50px;
+    	}
+   }
+   @media (max-width:1000px){
+   	    .top2 .navbar-header{
+   	    	width: 100% !important;
+   	    }
+   	    .lunbofl-nav{
+   	    	display: none;
+   	    }
+   	    .lunbo .lunbofr{
+   	    	width: 100%;
+   	    }
+   }
+.top1 span{
+	color:#f2e53f;
+}
+.navbar-header img{
+	display: block;
+	height: 22px;
+	width: 95px;
+}
+.top2 .form-control{
+	border-radius:0px ;
+	border-color: #000000;
+}
+.top2 .navbar,.top3 .navbar{
+	border:none;
+	border-radius:0px ;
+}
+.top2 .navbar-header-right{
+	float: right;
+	margin-top:15px ;
+}
+.top2 .navbar-header span{
+	margin: 0 5px;
+}
+.top3 .navbar{
+	background: #FFFFFF;
+}
+.top2 .navbar{
+	margin: 0;
+}
+.top2 .form-group input{
+	height: 30px;
+	width: 344px;
+}
+.top2 .glyphicon{
+	margin-left:-30px ;
+}
+.top3 .collapse .nav a,.top2 .collapse .nav a{
+	background: none;
+}
+/*轮播*/
+.lunbo .lunbofl-nav{
+	width: 20%;
+	background: #515857;
+	float: left;
+	height: 100%;
+}
+.lunbofr{
+	width: 80%;
+	float: right;
+}
+.lunbofl-nav ul b{
+	color: #FFFFFF;
+}
+.lunbofl-nav ul{
+	height: 378px;
+	padding: 10px 0;
+}
+.lunbo .lunbofl-nav ul li{
+	padding: 0 20px;
+	height: 62px;
+	line-height: 32px;
+}
+.lunbofl-nav ul li a{
+	display:inline-block;
+	height:32px;
+	margin: 15px 0;
+	color: #FFFFFF;
+	font-size:16px ;
+}
+.lunbofl-nav ul li b{
+	margin: 15px 0;
+	display: inline-block;
+	float: right;
+}
+@media(max-width:760px ) {
+ .navbar-header-right .dropdown-menu-right{
+		background: #FFFFFF!important;
+		position:absolute!important;
+		z-index: 100;
+		width: 150px!important;
+	}
+}
+.downfl p{
+	color: #337ab7;
+	font-size:19px;
+	position: relative;
+    z-index: 10;;
+}
+	.downfl{
+		overflow: hidden;
+		padding-top:20px ;
+	}
+
+.down .row{
+	margin: 0;
+}
+.down .row .downfr,.downfr .row ul li{
+	padding: 0;
+}
+.downfr .row ul li{
+	padding-left:10px;
+	margin: 5px 0;
+}
+.downfr .row ul li img{
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+		.downfr .row ul li{
+		padding-left:10px;
+		margin: 5px 0;
+		padding-bottom:7px ;
+        }
+		.downfr .row ul li img{
+			width: 100%;
+			height: 100%;
+			margin: 10px 0;
+        }
+}
+/*down1*/
+.down1 .down11>li{
+	padding:1.4375% 1.25% 1.25%;
+	border: 1px solid #ccc;
+}
+.down1 .down11>li:nth-child(1),
+.down1 .down11>li:nth-child(2),
+.down1 .down11>li:nth-child(3)
+{
+	margin-right:-1px ;
+}
+.down1 ul li img{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+.down1 ul li ul li:nth-child(2){
+	margin-bottom:20px ;
+}
+.down1 ul li ul li:nth-child(3){
+	color: #ec5412;
+	font-size: 16px;
+	margin-bottom:20px ;
+}
+.down1 ul li ul li:nth-child(2) a{
+	color: #666;
+	font-size: 18px;
+}
+.down1 ul li ul li:nth-child(4) a{
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	display:inline-block;
+	width: 150px;
+	background: #ec5412;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.down1 ul li ul li:nth-child(4) a:hover{
+	background:#be440e ;
+}
+@media(max-width:767px ) {
+	.down1 ul li ul li:nth-child(1){
+		width: 40%;
+		float: left;
+	}
+	.down1 ul li ul li:nth-child(4) a{
+		width: 100px;
+	}
+	.down1 ul li ul li:nth-child(4){
+		position:absolute;
+		right: 5px;
+		bottom: 20px;
+	}
+	.down1 ul li ul li:not(1){
+		/*float: right;*/
+		width: 60%;
+	}
+	.down1 .down11>li:nth-child(1),
+	.down1 .down11>li:nth-child(2),
+	.down1 .down11>li:nth-child(3)
+	{
+		margin-bottom:-1px ;
+}
+}
+/*down2*/
+.down2{
+	margin-top:50px ;
+	/*overflow: hidden;*/
+}
+.down2 img{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+.down2 .down2fl{
+	padding: 0;
+	padding-right:20px ;	
+}
+.down2frt div{
+	float: left;
+	position: relative;
+	border-top:1px solid #CCCCCC ;
+	border-right:1px solid #CCCCCC ;
+	border-left:1px solid #CCCCCC ;
+	margin-bottom:-1px;
+	z-index: 11;
+    font-size: 16px;
+}
+.down2frb{
+	position: relative;
+}
+/*.down2frb div{
+	border-top:1px solid #ccc ;
+	position:absolute;
+}*/
+/*down3*/
+.down3{
+	overflow: hidden;
+}
+.down3 p{
+	text-align: center;
+	font-size:18px ;
+	color: #666666;
+}
+.down3 img{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+.down3 ul li{
+	float: left;
+}
+/*down4*/
+.down4{
+	overflow: hidden;
+}
+.down4 img,.down4 span{
+	display: block;
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+/*.dropdown .youyou{
+	position: inherit;
+}*/
