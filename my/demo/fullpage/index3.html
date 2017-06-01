@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery全屏滚动插件DD Full Screen Slider演示-禁用锚点_dowebok</title>
+<link rel="stylesheet" href="css/ddfullscreenslider.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/ddfullscreenslider.js"></script>
+</head>
+
+<body>
+<section id="dowebok" class="dd_fullscreenslider">
+	<div class="slidewrapper">
+		<article class="slide">
+			<p style="position: relative; top: 35%; font: 700 60px 'Microsoft Yahei'; text-align: center;">第一屏</p>
+		</article>
+
+		<article class="slide">
+			<p style="position: relative; top: 35%; font: 700 60px 'Microsoft Yahei'; text-align: center;">第二屏</p>
+		</article>
+
+		<article class="slide">
+			<p style="position: relative; top: 35%; font: 700 60px 'Microsoft Yahei'; text-align: center;">第三屏</p>
+		</article>
+
+		<article class="slide">
+			<p style="position: relative; top: 35%; font: 700 60px 'Microsoft Yahei'; text-align: center;">第四屏</p>
+		</article>
+
+		<article class="slide">
+			<p style="position: relative; top: 35%; font: 700 60px 'Microsoft Yahei'; text-align: center;">第五屏</p>
+		</article>
+	</div>
+</section>
+
+<script>
+var fss;
+$(function() {
+	fss = new ddfullscreenslider({
+		sliderid: 'dowebok',
+		addHash: false
+	});
+});
+</script>
+
+</body>
+</html>

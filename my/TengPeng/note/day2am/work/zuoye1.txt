@@ -1,8 +1,0 @@
-<!--
-1.找出所有的块元素、行元素、可变元素
-标签：http://www.w3school.com.cn/tags/index.asp
--->
-
-新浪：http://www.sina.com.cn/
-腾讯：http://www.qq.com/
-重庆社区：http://www.chongqingol.com/

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery全屏滚动插件DD Full Screen Slider演示-回调函数_dowebok</title>
+<link rel="stylesheet" href="css/ddfullscreenslider.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/ddfullscreenslider.js"></script>
+</head>
+
+<body>
+<section id="dowebok" class="dd_fullscreenslider">
+	<div class="slidewrapper">
+		<article class="slide">
+			<p >第一屏</p>
+		</article>
+
+		<article class="slide">
+			<p >第二屏</p>
+		</article>
+
+		<article class="slide">
+			<p >第三屏</p>
+		</article>
+
+		<article class="slide">
+			<p >第四屏</p>
+		</article>
+
+		<article class="slide">
+			<p >第五屏</p>
+		</article>
+	</div>
+</section>
+
+<script>
+var fss;
+$(function() {
+	fss = new ddfullscreenslider({
+		sliderid: 'dowebok',
+		onslide: function($slide, index) {
+			alert('滚动到了第 ' + (index + 1) + ' 屏')
+		}
+	});
+});
+</script>
+
+</body>
+</html>

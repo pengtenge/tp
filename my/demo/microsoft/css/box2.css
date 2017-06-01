@@ -1,0 +1,42 @@
+.container{
+	margin-top:10px ;
+	padding: 0!important;
+}
+.col-md-3{
+	padding-left:0;
+}
+.col-md-3:last-child{
+	padding-right:0;
+}
+.item div{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+.item div ul{
+	width: 80%;
+	height: 80%;
+}
+.item div li{
+	margin-top: 10%; ;
+}
+.carousel-control{
+	height: 5%;
+	width: 10%;
+	top: 50%;
+	margin-top:-2% ;
+	background: #CCCCCC;
+	text-align: center;
+	line-height: 100%;
+}
+@media (max-width:768px ) {
+	.item div{
+		position: initial;
+	}
+	.item div li{
+	margin-top: 2%; ;
+}
+}
+.wu{
+	width: 5%;
+}

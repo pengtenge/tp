@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.wrap{
+				width: 400px;
+				margin: 50px auto;
+				position: relative;
+			}
+			h3{
+				text-align: center;
+			}
+			ul{
+				width: 400px;
+				height: 500px;
+				border: 1px solid #00A3F0;
+				margin-bottom: 0;
+				padding: 10px 5px;
+				overflow:auto;
+			}
+			ul li{
+				list-style: none;
+				margin-bottom: 5px;
+				clear: both;
+				
+			}
+			#list .me{
+				display: inline-block;
+				background: #199CC4;
+				color: #fff;
+				height: 22px;
+				width: auto;
+				padding: 4px 5px;
+				border-radius: 3px;
+				float: right;
+				margin-bottom: 5px;
+			}
+			#list .msg{
+				display: inline-block;
+				background: #F1F1F1;
+				color: #000;
+				height: 22px;
+				width: auto;
+				padding: 4px 5px;
+				border-radius: 3px;
+				margin-bottom: 5px;
+			}
+			.talk{
+				width: 420px;
+				/*position: absolute;*/
+				/*bottom: 0;*/
+			}
+			.talk #text{
+				width: 350px;
+				height: 40px;
+				outline: none;
+				float: left;
+			}
+			.talk #btn{
+				width: 59px;
+				height: 46px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h3>跟机器人对话</h3>
+			<ul id="list">
+			</ul>
+			<div class="talk">
+				<input type="text" name="" id="text"/>
+				<button id="btn">发送</button>
+			</div>
+		</div>
+		<script src="jquery.1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$('#btn').click(function(){
+				send();
+			});
+			
+			$('#text').keypress(function(ev){
+				if (ev.keyCode==13){
+			        send();
+			    } 
+			});
+			
+			function send(){
+				if($('#text').val()){
+					var oLi='<li><span class="me">'+$('#text').val()+'</span></li>';
+					$('#list').append(oLi);
+					$('#list').scrollTop($('#list')[0].scrollHeight);
+					$.ajax({
+						url:'http://www.tuling123.com/openapi/api?key=2e8b3468050a408ea651a54ff571841c&info='+$('#text').val(),
+						type:'get',
+						success:function(data){
+							var msg='<li><span class="msg">'+data.text+'</span></li>';
+							$('#list').append(msg);
+							$('#list').scrollTop($('#list')[0].scrollHeight);
+						},
+					});
+					$('#text').val('');
+				}
+			}
+		</script>
+	</body>
+</html>
