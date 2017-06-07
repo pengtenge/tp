@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑页面</title>
+</head>
+<link rel="stylesheet" href="/public/css/bootstrap.min.css">
+<style>
+
+</style>
+<body>-->
+<!--<div class="container" id="artedit">
+    <h3 class="">文本标题</h3>
+    <input type="text" class="form-control tit" value="{{currentdata.tit}}">
+    <h3>文章简介</h3>
+    <input type="text" class="form-control intro" value="{{currentdata.intro}}">
+    <h3>文章详情</h3>
+    <input type="text" class="form-control detail" value="{{currentdata.detail}}{{currentdata._id.toString()}}">
+    <button class="btn" data-id="{{currentdata._id.toString()}}">更改</button>
+</div>-->
+{% extends 'arteditdeml.html' %}
+{% block tit%}更改{% endblock%}
+{% block content %}
+<div class="container" id="artedit">
+    <h3 class="">文本标题</h3>
+    <input type="text" class="form-control tit" value="{{currentdata.tit}}">
+    <h3>文章简介</h3>
+    <input type="text" class="form-control intro" value="{{currentdata.intro}}">
+    <h3>文章详情</h3>
+    <input type="text" class="form-control detail" value="{{currentdata.detail}}">
+    <button class="btn" data-id="{{currentdata._id.toString()}}">更改</button>
+</div>
+
+{% endblock %}
+<!--
+<script src="/public/js/jquery-1.12.1.min.js"></script>
+<script src="/public/js/each.js"></script>
+</body>
+</html>-->

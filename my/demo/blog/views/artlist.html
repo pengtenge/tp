@@ -1,0 +1,60 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>文章列表</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>id</th>
+                <th>tit</th>
+                <th>intro</th>
+                <th>opration</th>
+            </tr>
+            {% for item in listdata %}
+            <tr>
+                <td>{{item._id.toString()}}</td>
+                <td>{{item.tit}}</td>
+                <td>{{item.intro}}</td>
+                <td>
+                    <a href="/admin/edit?id={{item._id.toString()}}"><button class="btn btn-primary">更改</button></a>
+                    <a href=""><button class="btn btn-danger">删除</button></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>-->
+{% extends 'arteditdeml.html' %}
+{% block tit%}详情{% endblock%}
+{% block content %}
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>id</th>
+            <th>tit</th>
+            <th>intro</th>
+            <th>opration</th>
+        </tr>
+        <tbody id="oarteid">
+        {% for item in listdata %}
+        <tr>
+            <td>{{item._id.toString()}}</td>
+            <td>{{item.tit}}</td>
+            <td>{{item.intro}}</td>
+            <td>
+                <a href="/admin/edit?id={{item._id.toString()}}"><button class="btn btn-primary">更改</button></a>
+                <a href="#"><button class="btn btn-danger oitem" data-id="{{item._id.toString()}}">删除</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

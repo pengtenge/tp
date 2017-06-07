@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tit %}{% endblock %}</title>
+</head>
+<link rel="stylesheet" href="/public/css/bootstrap.min.css">
+<style>
+
+</style>
+<body>
+
+<!--<div class="container" id="artedit">
+    <h3 class="">文本标题</h3>
+    <input type="text" class="form-control tit" value="{{currentdata.tit}}">
+    <h3>文章简介</h3>
+    <input type="text" class="form-control intro" value="{{currentdata.intro}}">
+    <h3>文章详情</h3>
+    <input type="text" class="form-control detail" value="{{currentdata.detail}}{{currentdata._id.toString()}}">
+    <button class="btn" data-id="{{currentdata._id.toString()}}">更改</button>
+</div>-->
+<div class="container">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">个人博客</a></li>
+
+        <li role="presentation"><a href="/admin">添加</a></li>
+        <li role="presentation"><a href="/admin/edit">更改</a></li>
+        <li role="presentation"><a href="/admin/list">详情</a></li>
+        <li role="presentation" class="float-right">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control osearch" placeholder="">
+                        <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="seek">Go!</button>
+      </span>
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </li>
+    </ul>
+</div>
+{% block content %} {% endblock %}
+<script src="/public/js/jquery-1.12.1.min.js"></script>
+<script src="/public/js/each.js"></script>
+</body>
+</html>
