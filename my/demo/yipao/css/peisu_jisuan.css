@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*配速计算器*/
+h3{
+	font-size: 24px;
+    color: #6b99d1;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+h3 span{
+	font-weight: 100;
+    font-size: 20px;
+    font-family: arial;
+}
+p{
+	color: #666;
+    line-height: 24px;
+    padding-top: 8px;
+    font-size:14px;
+}
+#form7 p{
+	text-indent: 2em;
+}
+#form1,#form2,#form3,#form4,#form5,#form6,#form7,#form8,#form9,.sele,.sele5,.sele91,.sele92{
+	color: #666;
+    padding-top: 26px;
+    font-size:14px;
+}
+.sele91 select{
+	width: 100px;
+	height: 25px;
+}
+#form1 input,#form2 input,#form3 input,#form4 input,#form5 input:last-child,#form6 input,#form7 input,#form8 input,#form9 input:last-child{
+	width: 70px;
+	height: 20px;
+	padding: 0 1px;
+	margin: 3px;
+	border: 1px #CDCDCD solid;
+}
+.tj,.tj2,.tj3,.tj4,.tj5,.tj6,.tj7,.tj8,.tj9{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+#calcu1,#reset1,#calcu2,#reset2,#calcu3,#reset3,#calcu4,#reset4,#calcu5,#reset5,#calcu6,#reset6,#calcu7,#reset7,#calcu8,#reset8,#calcu9,#reset9{
+	width: 100px;
+	height: 30px;
+	border: none;
+	font-size:14px;
+	color: #FFFFFF;  
+	cursor: pointer;
+	border-radius: 5px;
+}
+#calcu1,#calcu2,#calcu3,#calcu4,#calcu5,#calcu6,#calcu7,#calcu8,#calcu9{
+	background: #5eb84c;
+}
+#reset1,#reset2,#reset3,#reset4,#reset5,#reset6,#reset7,#reset8,#reset9{
+	background: #a0a99e;
+}
+.tj span,.tj2 span,.tj3 span,.tj4 span,.tj5 span,.tj6 span,.tj7 span,.tj8 span,.tj9 span{
+	color: #f00;
+	font-size:14px;
+	display: none;
+}
+/*BMI体重指数计算器*/
+#footer3,#footer5,#footer6,#footer7,#footer9{
+	clear: both;
+	width: 590px;
+	height: 28px;
+	margin-top: 22px;
+	padding-top: 20px;
+	background: url(../../img/dht.png) no-repeat;
+}
+#footer3 #result3,#footer5 #result5,#footer6 #result6,#footer7 #result7,#footer9 #result9{
+	color: #333;
+    line-height: 28px;
+    width: 590px;
+	height: 28px;
+    font-size:14px;
+}
+/*训练计算器*/
+#zy_jieguo,#yx_details{
+	display: none;
+	margin: 25px 0 0 37px;
+    color: #333;
+    line-height: 28px;
+    padding-top: 20px;
+}
+#zy_jieguo #tab2,#yx_details #tab1{
+	width: 482px;
+    font-size: 12px;
+    color: #5e5e5e;
+    text-align: center;
+}
+/*完跑计算器*/
+.form3_1{
+	text-indent: 5em;
+}
+select{
+	width: 60px;
+	height: 20px;
+	border: 1px solid #CDCDCD;
+}
+.form3_2{
+	text-indent: 1em;
+}
+/*公英单位计算器*/
+#bnt li{
+	height: 42px;
+	width: 300px;
+}
+#bnt li input{
+	height: 16px;
+	width: 48px;
+	margin: 2px 2px;
+}
+#bnt li img{
+	vertical-align:middle;
+}
+#bnt .bnt4{
+	float: right;
+}

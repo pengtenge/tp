@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/peisu_jisuan.css"/>
+		<link rel="stylesheet" type="text/css" href="css/yipao.css"/>
+	 	<script src="js/box10.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<!--top begin-->
+		<div class="top">
+			<img src="img/run1.jpg" class="run"/>
+			<div class="header">
+				<div class="w970">
+					<a href="" target="_blank"><img src="img/logo1.png"/></a>
+					<a href="" target="_blank" class="login">注册</a>
+					<a href="" target="_blank" class="login">登录</a>
+				</div>
+				<div class="square">
+					<div class="box">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+						<div class="four"></div>
+						<div class="five"></div>
+						<div class="six"></div>
+					</div>
+				</div>
+			</div>
+			<div class="nav w970">
+				<ul>
+					<li>
+						<a href="#" target="_blank">
+							<i><img src="img/indexb.png"/></i>
+							首页
+						</a>
+					</li>
+					<li>赛事</li>
+					<li>拼团</li>
+					<li>装备</li>
+					<li>训练</li>
+					<li>越野跑</li>
+					<li>跑者专栏</li>
+					<li>约跑</li>
+					<li>俱乐部</li>
+					<li>小工具</li>
+				</ul>
+			</div>
+		</div>
+		<!--top end-->
+		
+		<!--content begin-->
+			<div class="content w970">
+				<div class="list_guide">
+					<ul id="menu">
+						<li><a href="JavaScript:;" class="current">&gt; 配速计算器(Pace Calculator)</a></li>
+						<li><a href="JavaScript:;">&gt; 配速转换器(Pace Converter)</a></li>
+						<li><a href="JavaScript:;">&gt; 完跑计算器(Finish Time)</a></li>
+						<li><a href="JavaScript:;">&gt; 马拉松配速指南（Marathon Pace）</a></li>
+						<li><a href="JavaScript:;">&gt; 年龄等级计算器（Age-graded）</a></li>
+						<li><a href="JavaScript:;">&gt; BMI体重指数计算器</a></li>
+						<li><a href="JavaScript:;">&gt; 卡路里计算器（Calorie）</a></li>
+						<li><a href="JavaScript:;">&gt; 训练计算器</a></li>
+						<li><a href="JavaScript:;">&gt; 国家运动员等级</a></li>
+						<li><a href="JavaScript:;">&gt; 公英制转换</a></li>
+					</ul>
+				</div>
+				<div id="container">
+					<!--速配计算器-->
+					<div class="con" id="con1">
+						<h3>配速计算器<span>（Pace Calculator）</span></h3>
+						<p>在马拉松运动的训练中常使用的一个概念，配速是速度的一种，是每公里所需要的时间。配速=时间/距离。在本页面输入配速、时间、距离三项中的任意两项计算出第三项。</p>
+						<div id="form1">
+							距离：<input type="text" value="" id="distance1"/>公里<br />
+							<p>
+								时间：<input type="text" value="" id="hour1"/>时
+								<input type="text" value="" id="minute1"/>分
+								<input type="text" value="" id="second1"/>秒<br />
+							</p>
+							<p>
+								配速：<input type="text" value="" id="minute01"/>分
+								<input type="text" value="" id="time1"/>秒/公里<br />
+							</p>
+						</div>
+						<div class="tj">
+							<button id="calcu1">计算</button>
+							<button id="reset1">重置</button>
+							<span id="tishi1">输入数据不够</span>
+						</div>
+					</div>
+					<!--速配转换器-->
+					<div class="con">
+						<h3>配速转换/换算器<span>（Pace Converter）</span></h3>
+						<p>输入配速（？分？秒/公里）、公里/小时、米/秒中的任意一项，计算出其他两项。例如：1公里/小时=5/18米/秒=60分0秒/公里 3.33米/秒=12公里/小时=5分/公里</p>
+						<div id="form2">
+							方式1：<input type="" name="" id="yx_mm" value="" />分&nbsp; &nbsp; &nbsp;
+							 	<input type="" name="ss" id="yx_ss" value="" />秒/公里
+							<br />
+							方式2：<input type="" name="" id="yx_km" value="" />公里/小时
+							<br />
+							方式3：<input type="" name="" id="yx_meter" value="" />米/秒
+						</div>
+						<div class="tj2">
+							<button id="calcu2">计算</button>
+							<button id="reset2">重置</button>
+							<span id="tishi2">输入数据不够</span>
+						</div>
+					</div>
+					<!--完跑计算器-->
+					<div class="con">
+						<h3>完跑计算器<span>（Finish Time Calculator）</span></h3>
+						<p>输入你已经跑的距离、已跑距离所用时间、计划跑的距离三项，计算出你跑完计划里程的时间<br />如你计划跑10公里、已跑8公里、用时40分钟，你跑完10公里的用时将是49分58秒</p>
+						<div id="form3">
+							你已经跑的距离：<input type="text" value="" id="distance3"/>公里<br />
+							<p class="form3_1">
+								用时：<select id="num_hour31" name=""></select>时
+								<select id="num_minute31" name=""></select>分
+								<select id="num_second31" name=""></select>秒<br />
+							</p>
+							<p class="form3_2">
+								计划跑的距离：<input type="text" value="" id="distance31"/>公里<br />
+							</p>
+						</div>
+						<div class="tj3">
+								<button id="calcu3">计算</button>
+								<button id="reset3">重置</button>
+								<span id="tishi3">输入数据不够</span>
+						</div>
+						<div id="footer3">
+							<div id="result3"></div>
+						</div>
+					</div>
+					<!--马拉松-->
+					<div class="con">
+						<h3>马拉松配速指南（Marathon Pace Guide）</h3>
+						<p>输入你马拉松 预计完赛的时间（？小时?分？秒）或预计配速（？分？秒/公里），计算出另外一项和每公里所用的时间（1-42公里）</p>
+						<div id="form4">
+							预计完赛的时间：
+						<select name="" id="yx_hour"></select>时
+						<select name="" id="yx_min"></select>分
+						<select name="" id="yx_sec"></select>秒
+						<br />
+						<br />
+						或 预计配速：<input type="" name="" id="yx_minutes4" value="" />分
+						<input type="" name="" id="yx_seconds4" value="" />秒/公里
+						<br />
+						</div>
+						<div class="tj4">
+							<button id="calcu4">计算</button>
+							<button id="reset4">重置</button>
+							<span id="tishi4">输入数据不够</span>
+						</div>
+						<div id="yx_details">
+							每公里所用的时间：
+						    <table border="1" cellspacing="0" cellpadding="0" bordercolor="#ccc" id="tab1">
+						    	<tr>
+						    		<td width="25%">1Km</td>
+						    		<td id="yx_right1" width="25%"></td>
+						    		<td width="25%">20Km</td>
+						    		<td id="yx_right2" width="25%"></td>
+						    	</tr>
+						    	<tr>
+						    		<td>2Km</td>
+						    		<td id="yx_right3"></td>
+						    		<td>半程马拉松</td>
+						    		<td id="yx_right4"></td>
+						    	</tr>
+						    	<tr>
+						    		<td>5Km</td>
+						    		<td id="yx_right5"></td>
+						    		<td>30Km</td>
+						    		<td id="yx_right6"></td>
+						    	</tr>
+						    	<tr>
+						    		<td>10Km</td>
+						    		<td id="yx_right7"></td>
+						    		<td>全程马拉松</td>
+						    		<td id="yx_right8"></td>
+						    	</tr>
+						    	<tr>
+						    		<td>15Km</td>
+						    		<td id="yx_right9"></td>
+						    		<td></td>
+						    		<td></td>
+						    	</tr>
+						    </table>
+						</div>
+					</div>
+					<!--年龄计算器-->
+					<div class="con">
+						<h3>年龄等级计算器（Age-graded Calculator</h3>
+						<p>
+							输入性别、年龄、跑步距离、用时计算出：年龄等级得分,年龄等级用时等。世界级不同年龄的<br/>
+							成绩由WMA Age-grading calculator 2006提供。 年龄等级得分是您的成绩在您所在年龄组<br/>
+							的位置，年龄等级用时是对照组（25岁）要达到您的等级得分所需要的时间。 等级得分：100% <br/>
+							90% 世界水平 >80% 全国水平 >70% 地区水平 >60% 当地水平
+						</p>
+						<div id="form5">
+							性别：<input type="radio" name="sex1" id="tp_man" value="男子" checked="checked"/>男
+							    <input type="radio" name="sex1" value="女子"/>女
+							    </br>
+							年龄：<input id="tp_age" type="text" />
+						</div>	
+						<div class="sele5">
+							跑了：<select id="tp_sele" class="tp51"">
+									<option value="500">500m</option>
+									<option value="1000">1000m</option>
+									<option value="3000">3km</option>
+									<option value="5000">5km</option>
+									<option value="8000">8km</option>
+									<option value="10000">10km</option>
+									<option value="15000">15km</option>
+									<option value="20000">20km</option>
+									<option value="21000">半程马拉松</option>
+									<option value="30000">30km</option>
+									<option value="42000">全程马拉松</option>
+									<option value="50000">50km</option>
+									<option value="100000">100km</option>
+									<option value="150000">150km</option>
+									<option value="200000">200km</option>
+						    	</select>
+							用时：
+								<select id="tp_hour5"></select>时
+								<select id="tp_min5"></select>分
+								<select id="tp_sec5"></select>秒
+						</div>
+						<div class="tj5">
+								<button id="calcu5">计算</button>
+								<button id="reset5">重置</button>
+								<span id="tishi5">输入数据不够</span>
+						</div>
+						<div id="footer5">
+							<div id="result5"></div>
+						</div>
+					</div>
+					
+					<!--BMI体重计数器-->
+					<div class="con">
+						<h3>BMI体重指数计算器<span>（Body Mass Index Calculator）</span></h3>
+						<p>输入体重（公斤）、身高（厘米），计算BMI=体重（公斤）/身高（米）平方<<br />75KM 175CM BMI=75/1.75×1.75=24.49<br />偏轻（低于18.5）、正常（18.5-24.9）、偏重（25-29.9）、肥胖（30及以上）</p>
+						<div id="form6">
+							身高：<input type="" name="" id="height6" value="" />厘米<br />
+							<p>体重：<input type="" name="" id="weight6" value="" />公斤</p>
+						</div>
+						<div class="tj6">
+							<button id="calcu6">计算</button>
+							<button id="reset6">重置</button>
+							<span id="tishi6">输入数据不够</span>
+						</div>
+						<div id="footer6">
+							<div id="result6"></div>
+						</div>
+					</div>
+					<div class="con">
+						<h3>卡路里计算器<span>（Calorie Calculator）</span></h3>
+						<p>输入跑步距离（公里）、体重（公斤）计算卡路里</p>
+						<div id="form7">
+							跑步距离：<input type="" name="" id="distance7" value="" />公里<br />
+							<p>体重：<input type="" name="" id="weight7" value="" />公斤</p>
+						</div>
+						<div class="tj7">
+							<button id="calcu7">计算</button>
+							<button id="reset7">重置</button>
+							<span id="tishi7">输入数据不够</span>
+						</div>
+						<div id="footer7">
+							<div id="result7"></div>
+						</div>
+					</div>
+					<div class="con">
+						<h3>训练计算器<span>（Training Calculator）</span></h3>
+						<div id="form8">
+							最新跑步距离：<input type="" name="" id="run_dis" value=""/>公里
+						</div>
+						<div class="sele">
+							最新跑步用时：
+							<select id="zy_hour" name=""></select>时
+							<select id="zy_min" name=""></select>分
+							<select id="zy_second" name=""></select>秒
+						</div>
+						<div class="tj8">
+							<button id="calcu8">计算</button>
+							<button id="reset8">重置</button>
+							<span id="tishi8">输入数据不够</span>
+						</div>
+						<div id="zy_jieguo">
+							预计用时：
+							<table border="1" cellspacing="0" cellpadding="0" bordercolor="#ccc" id="tab2">
+								<tr>
+									<td colspan="2">用时</td>
+									<td colspan="2">配速</td>
+								</tr>
+								<tr>
+									<td width="25%">1.5km</td>
+									<td width="25%" id="s1"></td>
+									<td width="25%" id="p1"></td>
+									<td width="25%">公里/分</td>
+								</tr>
+								<tr>
+									<td>3km</td>
+									<td id="s2"></td>
+									<td id="p2"></td>
+									<td>公里/小时</td>
+								</tr>
+								<tr>
+									<td>5km</td>
+									<td id="s3"></td>
+									<td id="p3"></td>
+									<td>米/秒</td>
+								</tr>
+								<tr>
+									<td>10km</td>
+									<td id="s4"></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>半程马拉松</td>
+									<td id="s5"></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>全程马拉松</td>
+									<td id="s6"></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="con">
+						<h3>国家运动员等级</h3>
+						<p>输入性别，年龄和成绩（5K，10K，半程马拉松，全程马拉松），给出等级，分业余和专业<br />（专业不论年龄，也不含半程马拉松）</p>
+						<div id="form9">
+							性别：<input type="radio" name="sex" class="tp9bnt2" id="tp9nan" value="男子" checked="checked"/>男
+			 				    <input type="radio" name="sex" class="tp9bnt2" id="tp9nv" value="女子"/>女</br>
+							年龄：<input id="tp9nianli" type="text" />
+						</div>
+							<div class="sele91">
+								跑了：
+								<select id="tp91" class="tp91">
+									<option value="5000">5000米</option>
+									<option value="10000">10000米</option>
+									<option value="21000">半程马拉松</option>
+									<option value="42000">全程马拉松</option>
+								</select>
+							</div>
+							<div class="sele92">
+								最新跑步用时：
+								<select id="tp_hour1" name=""></select>时
+								<select id="tp_min1" name=""></select>分
+								<select id="tp_second1" name=""></select>秒
+							</div>
+							<div class="tj9">
+								<button id="calcu9">计算</button>
+								<button id="reset9">重置</button>
+								<span id="tishi9">输入数据不够</span>
+							</div>
+							<div id="footer9">
+								<div id="result9"></div>
+							</div>
+					</div>
+					<!--公英单位转换-->
+					<div class="con">
+						<h3>公英制转换</h3>
+					  	<ul id="bnt">
+					  		<li>
+					  			<input id="abnt1" type="text" value="" /> 英里
+					  		    <span id="abnt2" class="bnt2">
+					  		    	<img id="dengyu" src="img/dhao.png"/>
+					  		    </span>
+					  		    	<input id="abnt3" type="text"/>公里
+					  		    
+					  		    <span id="abnt4" class="bnt4">
+					  		    	<img src="img/chz.png"/>
+					  		    </span>
+					  		</li>
+					  		<li>
+					  			<input id="bbnt1" type="text" value="" /> 英寸
+					  		    <span id="bbnt2" class="bnt2">
+					  		    	<img id="dengyu" src="img/dhao.png"/>
+					  		    </span>
+					  		    	<input id="bbnt3" type="text"/>厘米
+					  		    
+					  		    <span id="bbnt4" class="bnt4">
+					  		    	<img src="img/chz.png"/>
+					  		    </span>
+					  		</li>
+					  		<li>
+					  			<input id="cbnt1" type="text" value="" /> 英尺
+					  		    <span id="cbnt2" class="bnt2">
+					  		    	<img id="dengyu" src="img/dhao.png"/>
+					  		    </span>
+					  		    	<input id="cbnt3" type="text"/>厘米
+					  		    
+					  		    <span id="cbnt4" class="bnt4">
+					  		    	<img src="img/chz.png"/>
+					  		    </span>
+					  		</li>
+					  		<li>
+					  			<input id="dbnt1" type="text" value="" /> 英磅
+					  		    <span id="dbnt2" class="bnt2">
+					  		    	<img id="dengyu" src="img/dhao.png"/>
+					  		    </span>
+					  		    	<input id="dbnt3" type="text"/>公斤
+					  		    
+					  		    <span id="dbnt4" class="bnt4">
+					  		    	<img src="img/chz.png"/>
+					  		    </span>
+					  		</li>
+					  		<li>
+					  			<input id="ebnt1" type="text" value="" /> 蛊司
+					  		    <span id="ebnt2" class="bnt2">
+					  		    	<img id="dengyu" src="img/dhao.png"/>
+					  		    </span>
+					  		    	<input id="ebnt3" type="text"/>克
+					  		    
+					  		    <span id="ebnt4" class="bnt4">
+					  		    	<img src="img/chz.png"/>
+					  		    </span>
+					  		</li>
+					  		<li>
+					  			<input id="fbnt1" type="text" value="" /> 加仑
+					  		    <span id="fbnt2" class="bnt2">
+					  		    	<img id="dengyu" src="img/dhao.png"/>
+					  		    </span>
+					  		    	<input id="fbnt3" type="text"/>升
+					  		    
+					  		    <span id="fbnt4" class="bnt4">
+					  		    	<img src="img/chz.png"/>
+					  		    </span>
+					  		</li>
+					  	</ul>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=1, user-scalable=no">
+		<meta name="" content=""/>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.wrap{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.header{
+				
+				height: 200px;
+				background: #008000;
+			}
+			.content{
+				
+				height: 400px;
+				background: #C7254E;
+			}
+			.footer{
+				
+				height: 100px;
+				background: #0084C7;
+			}
+			nav{
+				background: #ccc;
+				height: 50px;
+				padding-left: 10px;
+			}
+			nav a{
+				display: block;
+				padding: 0 10px;
+				margin-right: 5px;
+				color:#fff;
+				font:30px/50px "microsoft yahei";
+				float:left;
+			}
+			nav a:hover{
+				background:#F19F0F;
+			}
+			.content{
+				
+			}
+			.content .box{
+				width: 280px;
+				height: 280px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+				float:left;
+				background: #0000FF;
+			}
+			@media only screen and (min-width: 768px) and (max-width: 1024px) {
+				.wrap{
+					width: 1024px;
+					background: #0066CC;
+				}
+			  
+			  nav a{
+			  	font:12px/20px "微软雅黑";
+			  }
+			  .content .box{
+			  	width: 150px;
+			  	height: 150px;
+			  	background: #F37B1D;
+			  }
+			}
+			/*@media screen and (max-width: 1024px) {
+			  .wrap{
+					width: 1024px;
+					background: #0066CC;
+				}
+			  
+			  nav a{
+			  	font:12px/20px "微软雅黑";
+			  }
+			  .content .box{
+			  	width: 150px;
+			  	height: 150px;
+			  	background: #F37B1D;
+			  }
+			}*/
+			
+			@media screen and (max-width: 980px) {
+			  .wrap{
+					width: 800px;
+				}
+			  .header{
+			  	
+			  }
+			  nav a{
+			  	font:12px/20px "微软雅黑";
+			  }
+			  .content .box{
+			  	width: 150px;
+			  	height: 150px;
+			  	background: #000333;
+			  }
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<nav>
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">新闻中心</a></li>
+						<li><a href="">产品列表</a></li>
+						<li><a href="">联系方式</a></li>
+						<li><a href="">公司公告</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="content">
+				<div class="box">1</div>
+				<div class="box">2</div>
+				<div class="box">3</div>
+				<div class="box">3</div>
+			</div>
+			<div class="footer">footer</div>
+		</div>
+		
+	</body>
+</html>
